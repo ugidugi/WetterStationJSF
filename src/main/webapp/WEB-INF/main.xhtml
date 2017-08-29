@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>#{msg.title}</title>
+        <h:outputStylesheet library="css" name="page.css"/>
+    </h:head>
+    <h:body>
+        <ui:insert name="content">
+               <div class="data">
+                    <p>#{msg.date_time}</p>
+                    <p>#{weather_bean.date}</p>
+                    <p></p>
+                    <table>
+                        <tr><td>#{msg.temperature}: #{weather_bean.temperature}°C</td></tr>
+                        <tr><td>#{msg.speedwind}: #{weather_bean.speedWind} m/s</td></tr>
+                        <tr><td>#{msg.directionwind}: #{weather_bean.directionWind}°</td></tr>
+                        <tr><td>#{msg.humidity}: #{weather_bean.humidity} %</td></tr>
+                        <tr><td>#{msg.pressure}: #{weather_bean.pressure} hPa</td></tr>
+                        <tr><td>#{msg.radiation}: #{weather_bean.radiation} W/m2</td></tr>
+                        <tr><td>#{msg.precipitation}: #{avage.precipitation} mm</td></tr>
+                    </table>
+                </div>
+                <div class="discription">
+                    <p>#{msg.weather_disc_1}</p>
+                    <p>#{msg.weather_disc_2}</p>
+                </div>
+        </ui:insert>
+        <ui:insert name="navigation">
+            <div class="navigation">
+                <p><h:link value="#{msg.weather}" outcome="weather"/></p>
+                <p><h:link value="#{msg.temperature}" outcome="temperature"/></p>
+                <p><h:link value="#{msg.speedwind}" outcome="speedwind"/></p>
+                <p><h:link value="#{msg.directionwind}" outcome="directionwind"/></p>                   
+                <p><h:link value="#{msg.humidity}" outcome="humidity"/></p>
+                <p><h:link value="#{msg.pressure}" outcome="pressure"/></p>
+                <p><h:link value="#{msg.radiation}" outcome="radiation"/></p>
+                <p><h:link value="#{msg.precipitation}" outcome="precipitation"/></p>
+                <h:form>
+                    <br><p:calendar inputStyleClass="calendar" inputStyle="margin-left:15%; margin-right:5%"/>
+                    <p:calendar inputStyleClass="calendar"/></br>
+                    <br><h:commandButton value="Download"/></br>
+                </h:form>
+            </div>
+            
+        </ui:insert>
+    </h:body>
+</html>
+
