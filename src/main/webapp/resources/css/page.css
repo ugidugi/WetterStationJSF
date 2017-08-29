@@ -1,0 +1,42 @@
+.navigation{
+    float: left;
+    width: 280px;
+    height: 460px;
+}
+.chart{
+    float: left;
+    width: 650px;
+    height: 460px;
+}
+.data{
+    float: left;
+    width: 280px;
+    height: 460px;
+}
+.discription{
+    float: left;
+    width: 370px;
+    height: 460px;
+}
+img{
+    margin: 1%; 
+    margin-top: 0%;
+    float: left;
+    width: 120px; 
+    height: 160px;
+}
+p{
+    text-align: justify;
+    line-height:1.5;
+    font-size: 11pt;
+    text-indent:15px;
+    margin: 5%;
+    margin-left: 0%;
+    background-color: #f4f4f4;
+    font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Lucida,sans-serif;
+}
+.calendar{
+    width: 70px;
+    font-size: 11pt;
+    font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Lucida,sans-serif;
+}

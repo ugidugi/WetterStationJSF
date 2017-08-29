@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <h:outputStylesheet library="css" name="page.css"/>
+    </h:head>
+    <h:body>
+        <ui:composition template="/WEB-INF/main.xhtml">
+            <ui:define name="content">
+                <div class="data">
+                    <p>#{msg.date_time}</p>
+                    <p>#{weather_bean.date}</p>
+                    <table>
+                        <tr><td>#{msg.radiation}: #{weather_bean.radiation} W/m2</td></tr>
+                        <tr><td>#{msg.averege_per_day}: #{avage.radiation} W/m2</td></tr>
+                        <tr><td>#{msg.maximum}: #{maximum_bean.radiation} W/m2</td></tr>
+                        <tr><td>#{msg.minimum}: #{minimum_bean.radiation} W/m2</td></tr>
+                    </table>
+                </div>
+                <div class="discription">
+                    <h:graphicImage library="images" name="radiation.jpg"/>
+                    <p>#{msg.temperature_info}</p>
+                </div>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+

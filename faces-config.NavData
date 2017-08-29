@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="speedwind.xhtml" x="900" y="300" zoom="true"/>
+        <Node id="content/pressure.xhtml" x="400" y="600" zoom="true"/>
+        <Node id="index.xhtml" x="150" y="750" zoom="true"/>
+        <Node id="pressure.xhtml" x="150" y="600" zoom="true"/>
+        <Node id="content/directionwind.xhtml" x="900" y="150" zoom="true"/>
+        <Node id="content/radiation.xhtml" x="1150" y="150" zoom="true"/>
+        <Node id="content/precipitation.xhtml" x="150" y="450" zoom="true"/>
+        <Node id="weahter.xhtml" x="650" y="450" zoom="true"/>
+        <Node id="content/weather.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="content/speedwind.xhtml" x="150" y="150" zoom="true"/>
+        <Node id="temperature.xhtml" x="1400" y="150" zoom="true"/>
+        <Node id="radiation.xhtml" x="150" y="300" zoom="true"/>
+        <Node id="directionwind.xhtml" x="1150" y="300" zoom="true"/>
+        <Node id="precipitation.xhtml" x="650" y="300" zoom="true"/>
+        <Node id="content/temperature.xhtml" x="400" y="150" zoom="true"/>
+        <Node id="content/humidity.xhtml" x="400" y="300" zoom="true"/>
+        <Node id="humidity.xhtml" x="400" y="450" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>
